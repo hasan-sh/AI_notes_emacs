@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-04-21 di 13:08 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Academic Writing</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Hasan_sh" />
+<meta name="description" content="Main aspects of the course; that's on what the focus will be based"
+ />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/readtheorg/js/readtheorg.js"></script>
+<style>blockquote{border-left: 5px solid #5ecdef; padding-left: 5px;}</style>
+<style>@media screen and (max-width: 768px) { #copyright, #postamble {display: block;width: 100% !important; height: 100px;}}</style>
+<style>#content{padding-bottom:100px;}</style>
+
+<script type="text/javascript" src="https://orgmode.org/org-info.js">
+/**
+ *
+ * @source: https://orgmode.org/org-info.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in https://orgmode.org/org-info.js.
+ *
+ * Copyright (C) 2012-2020 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in https://orgmode.org/org-info.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "../index.html");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "1");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="../index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">Academic Writing</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org78729d7">1. Academic Style</a>
+<ul>
+<li><a href="#org3756dea">1.1. Characteristics of academic texts</a>
+<ul>
+<li><a href="#org2df0e4d">1.1.1. over all</a></li>
+</ul>
+</li>
+<li><a href="#org291e17b">1.2. In academic writing style:</a></li>
+</ul>
+</li>
+<li><a href="#orgb7a07f0">2. Quoting</a>
+<ul>
+<li><a href="#org5151864">2.1. why to refer to other articles?</a></li>
+<li><a href="#org2d6485d">2.2. in which parts of the text do you refer to other articles</a></li>
+<li><a href="#orged8e493">2.3. how do you refer to other articles?</a></li>
+<li><a href="#orgbe4022c">2.4. Academic research/papers</a></li>
+</ul>
+</li>
+<li><a href="#org6115ca2">3. Structure</a>
+<ul>
+<li><a href="#org352d081">3.1. <b>I</b> introduction</a></li>
+<li><a href="#orgcd07a8d">3.2. <b>M</b> methods;</a></li>
+<li><a href="#org51ebc38">3.3. <b>R</b> results/experiment section;</a></li>
+<li><a href="#org8626b98">3.4. <b>a</b></a></li>
+<li><a href="#org165a199">3.5. <b>D</b> discussion + Conclusion;</a></li>
+</ul>
+</li>
+<li><a href="#org1571d06">4. Linguistic Accuracy</a></li>
+<li><a href="#orgc06a0d0">5. Clarity of Formulation</a></li>
+<li><a href="#org1d0eb58">6. Paragraphs</a>
+<ul>
+<li><a href="#org8768576">6.1. what is a paragraph?</a>
+<ul>
+<li><a href="#org2e351f2">6.1.1. layout</a></li>
+</ul>
+</li>
+<li><a href="#orgeb168b3">6.2. why?</a></li>
+<li><a href="#org6a370dd">6.3. how to write good paragraphs?</a>
+<ul>
+<li><a href="#org7891218">6.3.1. main</a></li>
+<li><a href="#orgfca204b">6.3.2. hamburger structure!</a></li>
+</ul>
+</li>
+<li><a href="#org955792f">6.4. structure of the final assignment</a></li>
+</ul>
+</li>
+<li><a href="#org880808a">7. Assignments</a>
+<ul>
+<li><a href="#org4b39f95">7.1. <span class="done DONE">DONE</span> ass1 <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-04-14 di 23:00&gt;</span></span></a></li>
+<li><a href="#org6545a8d">7.2. ass2 <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-05-01 vr 23:00&gt;</span></span></a></li>
+<li><a href="#org81e4ce9">7.3. <span class="todo TODO">TODO</span> ass3 <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-05-18 ma 23:00&gt;</span></span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org78729d7" class="outline-2">
+<h2 id="org78729d7"><span class="section-number-2">1</span> Academic Style</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+formality, use of academic phrases.
+</p>
+</div>
+
+<div id="outline-container-org3756dea" class="outline-3">
+<h3 id="org3756dea"><span class="section-number-3">1.1</span> Characteristics of academic texts</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org2df0e4d" class="outline-4">
+<h4 id="org2df0e4d"><span class="section-number-4">1.1.1</span> over all</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<ol class="org-ol">
+<li>standard structure, conventionalized</li>
+<li>References</li>
+<li>Boring layout</li>
+<li>Formal language; no errors, complete sentences and well considered arguments</li>
+<li>Objective and factual;</li>
+</ol>
+<blockquote>
+<p>
+there could be personal opinion, but the way these opinions are presented is impersonally
+   E.g. instead of <b>I think this is ridiculous</b> it would be <b>this does not seem the right conclusion</b>
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org291e17b" class="outline-3">
+<h3 id="org291e17b"><span class="section-number-3">1.2</span> In academic writing style:</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>references have to be made</li>
+<li>often a lot of uncertainties are present; could mean, this might be the solution etc.</li>
+<li>the phrases: <i>prof. X states that..</i> not <i>"&#x2026;", he says</i>.</li>
+<li>Common problem words <a href="https://www2.fgw.vu.nl/els-online/v2_0/linguistic_range_and_accuracy/vocabulary/problem_words.php"><span class="underline"><b>practice here</b></span></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgb7a07f0" class="outline-2">
+<h2 id="orgb7a07f0"><span class="section-number-2">2</span> Quoting</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+referring and avoiding plagiarism. 
+</p>
+</div>
+
+<div id="outline-container-org5151864" class="outline-3">
+<h3 id="org5151864"><span class="section-number-3">2.1</span> why to refer to other articles?</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>to explain what we know about the topic; summary of the topic(ie what other have done)
+<ul class="org-ul">
+<li>quote reporting verbs that are of importance; provide, offer, have been done, have studied</li>
+</ul></li>
+<li>to use as a starting point for a discussion or experiment.</li>
+<li>to give definitions and facts; to show that you(ie researcher) have the data and references and you didn't made things up.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2d6485d" class="outline-3">
+<h3 id="org2d6485d"><span class="section-number-3">2.2</span> in which parts of the text do you refer to other articles</h3>
+<div class="outline-text-3" id="text-2-2">
+<blockquote>
+<p>
+general basic/standard format of academic texts; see <a href="#org6115ca2">Structure</a>:
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orged8e493" class="outline-3">
+<h3 id="orged8e493"><span class="section-number-3">2.3</span> how do you refer to other articles?</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+referring to articles should be made easy for people to find them. general referencing style:
+</p>
+<ol class="org-ol">
+<li>in-text references; ex
+<ol class="org-ol">
+<li>referring;  <i>IEEE style</i>: [1] or <i>Harvard style</i>: (NAME<sub>OF</sub><sub>AUTHOR</sub> YEAR) - common in introduction</li>
+<li>paraphrasing where the author is part of the sentence; <span class="underline">Smith (2013) concludes &#x2026;</span> - quite common and you can go into details if needed.
+<ol class="org-ol">
+<li>change the diction of the original text; but not the keywords(ie authors' names etc)</li>
+<li>change the structure; ex sentence order</li>
+<li><b>keep the meaning</b></li>
+</ol></li>
+<li>quoting; <span class="underline">Smith (2013) says that "&#x2026;"</span> - going in more details. General facts about a topic don't yhave to be quoted.</li>
+</ol></li>
+<li><p>
+bibliography; what info you need to find in a book or article? - with page #s and authors' names
+</p>
+<blockquote>
+<p>
+is meant pre-internet times.
+</p>
+</blockquote></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgbe4022c" class="outline-3">
+<h3 id="orgbe4022c"><span class="section-number-3">2.4</span> Academic research/papers</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>always start with introduction, literature review(previous work or background) and then their work.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6115ca2" class="outline-2">
+<h2 id="org6115ca2"><span class="section-number-2">3</span> Structure</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+introduction, thesis statement and paragraph statement. There is a basic/standard format of academic texts:
+</p>
+</div>
+<div id="outline-container-org352d081" class="outline-3">
+<h3 id="org352d081"><span class="section-number-3">3.1</span> <b>I</b> introduction</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+you may refer to many/certain examples
+</p>
+</div>
+</div>
+<div id="outline-container-orgcd07a8d" class="outline-3">
+<h3 id="orgcd07a8d"><span class="section-number-3">3.2</span> <b>M</b> methods;</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+present your methods, you might not have references, unless yours based on done methods
+</p>
+</div>
+</div>
+<div id="outline-container-org51ebc38" class="outline-3">
+<h3 id="org51ebc38"><span class="section-number-3">3.3</span> <b>R</b> results/experiment section;</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+usually don't have many references; since here you describe the results and experiments of your research.
+</p>
+</div>
+</div>
+<div id="outline-container-org8626b98" class="outline-3">
+<h3 id="org8626b98"><span class="section-number-3">3.4</span> <b>a</b></h3>
+</div>
+<div id="outline-container-org165a199" class="outline-3">
+<h3 id="org165a199"><span class="section-number-3">3.5</span> <b>D</b> discussion + Conclusion;</h3>
+<div class="outline-text-3" id="text-3-5">
+<p>
+you mainly return to the referred studies mentioned in the introduction; so can be less precise.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org1571d06" class="outline-2">
+<h2 id="org1571d06"><span class="section-number-2">4</span> Linguistic Accuracy</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+grammar, vocabulary and punctuation
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc06a0d0" class="outline-2">
+<h2 id="orgc06a0d0"><span class="section-number-2">5</span> Clarity of Formulation</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+linking language and clauses combining
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1d0eb58" class="outline-2">
+<h2 id="org1d0eb58"><span class="section-number-2">6</span> Paragraphs</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org8768576" class="outline-3">
+<h3 id="org8768576"><span class="section-number-3">6.1</span> what is a paragraph?</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>a unit of a text that's recognizable; in terms of layout and argumentation.</li>
+<li>in each paragraph the writer discusses certain topic, and moving from one to the other represent the transmission between topics.</li>
+</ul>
+</div>
+<div id="outline-container-org2e351f2" class="outline-4">
+<h4 id="org2e351f2"><span class="section-number-4">6.1.1</span> layout</h4>
+<div class="outline-text-4" id="text-6-1-1">
+<ol class="org-ol">
+<li>each paragraph starts with a tab; indentation.</li>
+<li>first sentence is <b>the topic sentence</b>; which is the main theme/goal of the paragraph.</li>
+<li>rest of the paragraph provides the argumentation, examples or evidence of the topic sentence.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgeb168b3" class="outline-3">
+<h3 id="orgeb168b3"><span class="section-number-3">6.2</span> why?</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>to no overwhelm the reader 
+<ul class="org-ul">
+<li>the writer breaks down their idea into several paragraphs to make it easier to read</li>
+<li>as a result the reader stays well informed of the topic the writer is conveying.</li>
+</ul></li>
+<li>e.g. after introducing a topic in the <a href="#org2e351f2">topic sentence</a>, then the writer explains more about the topic which helps the reader to grasp the idea thoroughly.</li>
+<li>ending words, such as <i>lastly</i>, are used to inform the reader that they've reached the final paragraph, thus there <b>must</b> not be additional ones</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6a370dd" class="outline-3">
+<h3 id="org6a370dd"><span class="section-number-3">6.3</span> how to write good paragraphs?</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+writing can be messy and differ among writers. For each paragraph you can:
+</p>
+</div>
+<div id="outline-container-org7891218" class="outline-4">
+<h4 id="org7891218"><span class="section-number-4">6.3.1</span> main</h4>
+<div class="outline-text-4" id="text-6-3-1">
+<ol class="org-ol">
+<li>decide on what idea or topic it will be</li>
+<li>then, again, in the sentences that follow, shed more light on the said topic</li>
+<li><p>
+present information in order
+</p>
+<ul class="org-ul">
+<li>logical order; eg Meditation helps mental health. It makes you become more relaxed and focused. <b>Moreover</b>, &#x2026;.., <b>also</b>..  <i>NOTICE THE LINKING WORDS</i></li>
+<li>chronological order; eg In the 1960s the software crisis rose in the computer industry. The most noticeable example of this crisis was the IBM's <i>OS/360</i>, it was expected in 1966; a year after many of IBM's <i>system/360</i> were sold. And it was not released until 1968.</li>
+</ul>
+<blockquote>
+<p>
+these orders styles you can follow from the article 
+</p>
+</blockquote></li>
+</ol>
+<blockquote>
+<p>
+after you've written and followed the structure above, go back and read your sentences to check whether you've actually conveyed the message you intended to.
+</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-orgfca204b" class="outline-4">
+<h4 id="orgfca204b"><span class="section-number-4">6.3.2</span> hamburger structure!</h4>
+<div class="outline-text-4" id="text-6-3-2">
+<p>
+the structure of paragraphs has been compared to the hamburger's. Since you have the topic, detail and conclusion sections; as discussed <a href="#org7891218">here</a>.
+</p>
+
+<div class="figure">
+<p><img src="Paragraphs/2020-04-21_12-56-39_screenshot.png" alt="2020-04-21_12-56-39_screenshot.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org955792f" class="outline-3">
+<h3 id="org955792f"><span class="section-number-3">6.4</span> structure of the final assignment</h3>
+<div class="outline-text-3" id="text-6-4">
+
+<div class="figure">
+<p><img src="Paragraphs/2020-04-21_11-13-52_screenshot.png" alt="2020-04-21_11-13-52_screenshot.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org880808a" class="outline-2">
+<h2 id="org880808a"><span class="section-number-2">7</span> Assignments</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+general info about the assignment
+</p>
+</div>
+<div id="outline-container-org4b39f95" class="outline-3">
+<h3 id="org4b39f95"><span class="section-number-3">7.1</span> <span class="done DONE">DONE</span> ass1 <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-04-14 di 23:00&gt;</span></span></h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+summary of one article; third-person perspective.
+The whole text is referenced; or refer to what it was referred to in that article
+</p>
+</div>
+</div>
+<div id="outline-container-org6545a8d" class="outline-3">
+<h3 id="org6545a8d"><span class="section-number-3">7.2</span> ass2 <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-05-01 vr 23:00&gt;</span></span></h3>
+</div>
+
+<div id="outline-container-org81e4ce9" class="outline-3">
+<h3 id="org81e4ce9"><span class="section-number-3">7.3</span> <span class="todo TODO">TODO</span> ass3 <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-05-18 ma 23:00&gt;</span></span></h3>
+<div class="outline-text-3" id="text-7-3">
+<p>
+some references in the introduction can be added to refer to what had been done. In the body, needs to be a comparison or discussion of all the 3 chosen academic articles, which means there should be references. In the conclusion you summarize so no need for new references. See the needed <a href="#org955792f">structure</a> of this assignment.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Hasan<sub>sh</sub></p>
+<p class="date">Created: 2020-04-21 di 13:08</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
