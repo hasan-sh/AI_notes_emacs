@@ -1,0 +1,4 @@
+.disable, .disable  a {
+    cursor: not-allowed;
+    color: gray;
+}
