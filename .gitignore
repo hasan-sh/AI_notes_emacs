@@ -5,6 +5,7 @@
 !*.html
 !*.css
 !*.js
+!*.py
 !*.png
 
 !*.woff
