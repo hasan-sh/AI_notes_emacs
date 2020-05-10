@@ -1,6 +1,7 @@
 
 if (document) {
     attachClickEvents();
+    // comment the next line out if you are not using org-mode.js 
     window.addEventListener('hashchange', attachClickEvents);
 }
 
