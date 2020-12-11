@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-12-11 Fri 16:19 -->
+<!-- 2020-12-11 Fri 16:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Home Sitemap for project html-publish-local</title>
+<title>Fifth lecture</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Hasan_sh" />
-<meta name="description" content="home page of all notes"
+<meta name="description" content="Fifth lecture SM: notes and learning skills."
  />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -195,10 +195,12 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link href="disabledStyles.css" rel="stylesheet"/>
-<style>blockquote{border-left: 5px solid #5ecdef; padding-left: 5px;}</style>
-<style>@media screen and (max-width: 768px) { #copyright, #postamble {display: block;width: 100% !important; height: 100px;}}</style>
-<style>#content{padding-bottom:100px;}</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
 
 <script type="text/javascript" src="https://orgmode.org/org-info.js">
 /**
@@ -260,7 +262,7 @@ for the JavaScript code in this tag.
 
 <!--/*--><![CDATA[/*><!--*/
 org_html_manager.set("TOC_DEPTH", "3");
-org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_HOME", "../../index.html");
 org_html_manager.set("LINK_UP", "");
 org_html_manager.set("LOCAL_TOC", "1");
 org_html_manager.set("VIEW_BUTTONS", "0");
@@ -319,36 +321,104 @@ for the JavaScript code in this tag.
 </script>
 </head>
 <body>
-<div id="content">
-<h1 class="title">Home Sitemap for project html-publish-local</h1>
-<ul class="org-ul">
-<li><a href="index.html">Home</a></li>
-<li>MAS
-<ul class="org-ul">
-    <li><a  class="disable" href="MAS/lecture4.html">Forth lecture</a></li>
-    <li><a  class="disable" href="MAS/lecture3.html">Third lecture</a></li>
-    <li><a  class="disable" href="MAS/notes.html">notes</a></li>
-</ul></li>
-<li>statistical<sub>methods</sub>
-<ul class="org-ul">
-<li><a href="statistical_methods/lecture_1/main.html">lecture 1</a></li>
-<li><a href="statistical_methods/lecture_2/main.html">lecture 2</a></li>
-<li><a href="statistical_methods/lecture_3/main.html">lecture 3</a></li>
-<li><a href="statistical_methods/lecture_4/main.html">lecture 4</a></li>
-<li><a href="statistical_methods/lecture_5/main.html">lecture 5</a></li>
-<li><a href="statistical_methods/lecture_6/main.html">lecture 6</a></li>
-<li><a href="statistical_methods/lecture_7/main.html">lecture 7</a></li>
-<li><a href="statistical_methods/lecture_8/main.html">lecture 8</a></li>
-<li><a href="statistical_methods/lecture_9/main.html">lecture 9</a></li>
-<li><a href="statistical_methods/lecture_10/main.html">lecture 10</a></li>
-</ul></li>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="../../index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">Fifth lecture</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgca9b66a">1. Sampling distributions and estimators</a></li>
+<li><a href="#org433e38e">2. Confidence intervals</a></li>
+<li><a href="#org7e8a298">3. Estimators</a></li>
+<li><a href="#orgcfaed93">4. population estimation from sample distribution</a></li>
 </ul>
 </div>
+</div>
+
+
+<div id="outline-container-orgca9b66a" class="outline-2">
+<h2 id="orgca9b66a"><span class="section-number-2">1</span> Sampling distributions and estimators</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Sometimes we cannot decide whether some sample mean is a good representative of (or close to) the population mean, however, we can study the distribution of the values of the sample mean. But this is very tedious and hard to do.
+</p>
+
+
+<p>
+Moreover, since the E(sample mean) = &mu; (population mean), the standard deviation of the sample mean provides information about how good the estimate is (i.e. how accurate the distribution is.)
+</p>
+
+<p>
+The previous paragraph, introduces the <b>confidence intervals</b>.
+</p>
+</div>
+</div>
+<div id="outline-container-org433e38e" class="outline-2">
+<h2 id="org433e38e"><span class="section-number-2">2</span> Confidence intervals</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+The confidence interval is a range (or interval) that provides the <b>best</b> estimate of a population parameter based on the obtained sample statistic.
+</p>
+
+<p>
+Moreover, the <b>confidence level</b> specify the probability of the confidence interval. It is specified by 1 - <i>alpha. Where /alpha = 0.01, 0.05, or 0.1. The confidence level gives the /success rate</i> of the procedure for constructing the confidence interval.
+</p>
+
+
+<p>
+<b>Critical values</b> are borderlines that separates statistics that are likely from those that are unlikely. The z<sub>(/alpha/2)</sub> has three different z scores for the confidence levels. E.g. z<sub>0.05</sub>/2 is 1.96, which is the borderline for the statistic when the confidence level of the confidence interval is 95%. And we say with 95% confident that the population parameter (e.g. &mu;) lies within the interval, for example, [.82,.87].
+ To estimate the true population mean, we use the confidence intervals that provides the best estimate. The confidence intervals are defined to be in the intervals of [m(X<sub>n</sub>) - 1.96*s<sub>n</sub>/sqrt(n), m(X<sub>n</sub>) + 1.96*s<sub>n</sub>/sqrt(n)], where s<sub>n</sub> is the estimate of the population's standard deviation (in case it is unknown.) Moreover this estimate equals to 95% and the small the interval, the more precise the estimate of the sample mean.
+</p>
+
+<p>
+The <i>1.96*s<sub>n</sub>/sqrt(n)</i> is called the <b>margin error</b> (abbreviated by E). We can also rewrite the previous formula in case we want to compute (the minimum) sample size <b>n</b> such that the margin of error (i.e. E) is some given value; n = (1.96*s<sub>n</sub>/E)**2.
+</p>
+</div>
+</div>
+<div id="outline-container-org7e8a298" class="outline-2">
+<h2 id="org7e8a298"><span class="section-number-2">3</span> Estimators</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Estimators are used to <i>estimate</i> the population parameters from the statistics of the sample distribution. E.g. the sample variance can be used to estimate the population variance, since the sample variance targets (i.e. its mean equals) the population mean (for large number of n). 
+</p>
+
+<p>
+Moreover, a biased estimator is one that does not target (i.e. its mean does not equal) the population parameter. E.g. the <i>range</i> sample of the population {4,5,9}, where each sample is drawing one element with replacement. The population range here is 9-4=5, however, the sample range (after drawing, say, two times) is 2.2, which is the mean of the sample range, and it does not equal to the population range. 
+</p>
+
+<p>
+<b>Unbiased estimators:</b>
+</p>
+<ol class="org-ol">
+<li>sample mean</li>
+<li>sample variance</li>
+<li>sample proportion</li>
+</ol>
+
+<p>
+In contrast, <b>biased estimators:</b>
+</p>
+<ol class="org-ol">
+<li>sample median</li>
+<li>sample range</li>
+<li>sample sd</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgcfaed93" class="outline-2">
+<h2 id="orgcfaed93"><span class="section-number-2">4</span> population estimation from sample distribution</h2>
+</div>
+</div>
 <div id="postamble" class="status">
+<p class="date">Date: 2020-11-13 Fri 00:00</p>
 <p class="author">Author: Hasan<sub>sh</sub></p>
-<p class="date">Created: 2020-12-11 Fri 16:19</p>
+<p class="date">Created: 2020-12-11 Fri 16:03</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
-<script src="preventDisabled.js"></script>
 </body>
 </html>
+<script type="text/javascript" src="../imageModal.js"></script>

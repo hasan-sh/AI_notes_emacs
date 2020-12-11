@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-12-11 Fri 16:19 -->
+<!-- 2020-12-11 Fri 16:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Home Sitemap for project html-publish-local</title>
+<title>Second lecture</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Hasan_sh" />
-<meta name="description" content="home page of all notes"
+<meta name="description" content="Second lecture SM: notes and learning skills."
  />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -195,10 +195,12 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link href="disabledStyles.css" rel="stylesheet"/>
-<style>blockquote{border-left: 5px solid #5ecdef; padding-left: 5px;}</style>
-<style>@media screen and (max-width: 768px) { #copyright, #postamble {display: block;width: 100% !important; height: 100px;}}</style>
-<style>#content{padding-bottom:100px;}</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
 
 <script type="text/javascript" src="https://orgmode.org/org-info.js">
 /**
@@ -260,7 +262,7 @@ for the JavaScript code in this tag.
 
 <!--/*--><![CDATA[/*><!--*/
 org_html_manager.set("TOC_DEPTH", "3");
-org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_HOME", "../../index.html");
 org_html_manager.set("LINK_UP", "");
 org_html_manager.set("LOCAL_TOC", "1");
 org_html_manager.set("VIEW_BUTTONS", "0");
@@ -319,36 +321,199 @@ for the JavaScript code in this tag.
 </script>
 </head>
 <body>
-<div id="content">
-<h1 class="title">Home Sitemap for project html-publish-local</h1>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="../../index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">Second lecture</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org40849f2">1. Probability</a>
+<ul>
+<li><a href="#orgf3cdb4a">1.1. Relative Frequency</a></li>
+<li><a href="#orgc271146">1.2. Classical Approach</a></li>
+<li><a href="#org77433ad">1.3. Subjective approach</a></li>
+</ul>
+</li>
+<li><a href="#org6e8a047">2. Conditional Probability</a></li>
+<li><a href="#orge7beda5">3. Addition Rule</a></li>
+<li><a href="#org6198aea">4. Multiplication Rule</a>
+<ul>
+<li><a href="#orge27b62c">4.1. Independent</a></li>
+<li><a href="#org15bb94d">4.2. Sampling methods</a></li>
+<li><a href="#orgb418242">4.3. Complement rule</a></li>
+</ul>
+</li>
+<li><a href="#org8d62753">5. Knowledge &amp; Skills</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org40849f2" class="outline-2">
+<h2 id="org40849f2"><span class="section-number-2">1</span> Probability</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Prob. is used extensively in statistics. For example, we want to conclude how what's the probability that a baby's birth is 21 early. Here we would have to gather samples (i.e. cases of different births) and using <b>relative frequency</b> measurement we can estimate the total special cases / total cases. Moreover, the more samples we have, the accurate probability we obtain.
+</p>
+
 <ul class="org-ul">
-<li><a href="index.html">Home</a></li>
-<li>MAS
+<li><b>Probability Experiment</b>: produces different outcomes.</li>
+<li><b>Sample space</b>: a set of all possible outcomes, and it's denoted by &Omega;.</li>
+<li><b>Event A, B,&#x2026;</b>: a collection of events; e.g. A={bbg, bgb, gbb}</li>
+<li><b>Simple Event</b>: this has only one expected outcome</li>
+</ul>
+</div>
+
+<div id="outline-container-orgf3cdb4a" class="outline-3">
+<h3 id="orgf3cdb4a"><span class="section-number-3">1.1</span> Relative Frequency</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+This approach is used to approximate the probability: n of times A occurred / n of all trails. This approach is mainly used when it can be said that each outcome is <b>equally likely</b> to occur. E.g. Ronaldo scores 53 out of 60 penalties, We can then estimate the prob. he will score a penalty: 53/60 = .83 
+</p>
+
+<p>
+Moreover, larger data sets provide better estimates. This is supported by the law of large numbers. E.g. if you throw a die 100 times, you might get unstable outcomes (i.e. not as expected), however, it becomes more stable if we throw a thousand time.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc271146" class="outline-3">
+<h3 id="orgc271146"><span class="section-number-3">1.2</span> Classical Approach</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+This works for theoretical models, i.e. each test has <b>equally likely</b> probability to occur. E.g. throwing a fair coin two times what's the prob. of getting 1 heads? we know the possible outcomes (2<sup>3</sup>), then we know it's 2/8 = 1/4 = .25
+</p>
+</div>
+</div>
+<div id="outline-container-org77433ad" class="outline-3">
+<h3 id="org77433ad"><span class="section-number-3">1.3</span> Subjective approach</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Happens when we have little information and the interpretation of an event depends on our subjective judgment.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6e8a047" class="outline-2">
+<h2 id="org6e8a047"><span class="section-number-2">2</span> Conditional Probability</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+In which the sample space is influenced by pas outcomes. E.g. if you roll a die twice and say "the first score was 3" what is the prob. the sum equals to 8? (i.e. the total sum after throwing the second die). After throwing a 3, you have 6 possibilities {(3,1), (3, 2)&#x2026;(3, 6)} and to get a sum of 8, then we have on of these possibilities; i.e. (3,5) = 1/6. Thus, P(B|A) = 1/6. Pronounced as "B given A". 
+</p>
+
+<p>
+The general formula is: <b>P(B|A) = P(A &cap; B) / P(A)</b>.  
+</p>
+</div>
+</div>
+<div id="outline-container-orge7beda5" class="outline-2">
+<h2 id="orge7beda5"><span class="section-number-2">3</span> Addition Rule</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Is when we have two events that could occur. E.g. we have two fair coins, and we want to know the prob. of throwing heads. A common mistake is to sum the two outcomes: 1/2 + 1/2 = 1. But this is not true. A solution is to write the smaple space: &Omega; = {HH, HT, TH, TT}, know we clearly see it's 3/4, and not 1. 
+</p>
+
+<p>
+Another possible solution, relates to the <i>addition rule</i>, is to sum the two possible outcomes AND subtract the prob. that both events occur: P(A) + P(B) - P(A &cap; B). Translating that to the example would be: P(H) + P(H) - P(HH) 
+</p>
+
+<p>
+Here of course, the notation &cap; (intersection) and &cup; (union) is used to facilitate considering probabilities. Two events are disjoint, if they do not overlap wrt outcomes.
+</p>
+</div>
+</div>
+<div id="outline-container-org6198aea" class="outline-2">
+<h2 id="org6198aea"><span class="section-number-2">4</span> Multiplication Rule</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Imagine we have a vase with 9 balls, and you draw two balls without returning the drawn ball back. What is the prob. of drawing 1 and then 2; P(1,2). The answer can be concluded in two ways: write the sample space and draw one ball, then write the sample space again after removing the first ball; we have only 8 balls left. So 1/81 is incorrect; because it's without replacement (i.e. we do not put the ball back).
+</p>
+
+<p>
+Another solution is by means of the multiplication rule. P(1,2) = P(first 1) * P(ball 2 | ball 1 is drawn) = 1/9 * 1/8 = 1/72.
+</p>
+
+<p>
+Note the multiplication rule is a rewritten formula of the conditional prob. 
+</p>
+<pre class="example">
+CP: 
+P(B|A) = P(A \cap B) / P(A).  
+
+MR:
+P(A \cap B) = P(A) * P(B | A)
+</pre>
+</div>
+
+<div id="outline-container-orge27b62c" class="outline-3">
+<h3 id="orge27b62c"><span class="section-number-3">4.1</span> Independent</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Two events A and B are independent if: P(A &cap; B) = P(A) * P(B), where P(B) was substituted in P(A|B), which implies independence.
+</p>
+
+<p>
+We can always check whether two events are independent using the formula.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org15bb94d" class="outline-3">
+<h3 id="org15bb94d"><span class="section-number-3">4.2</span> Sampling methods</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+We have two methods:
+</p>
+<ol class="org-ol">
+<li>sampling with replacement;  independent events: e.g. drawing ball 1 and replacing it back, does not influence the prob of drawing ball 3 in the second turn</li>
+<li>sampling without replacement; dependent events; e.g. drawing ball 1 and NOT replacing it back, does influence the prob. of drawing ball 3 in the second turn.</li>
+</ol>
+
+
+<p>
+However, sometimes we treat a small sample from a large population we consider the events as independent ones. This is called <b>small sample rule</b> and it's to simplify calculations.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb418242" class="outline-3">
+<h3 id="orgb418242"><span class="section-number-3">4.3</span> Complement rule</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+The complement of <b>at least one</b> (occurrence): P(&gt;= 1 of A) = 1 - P( no occurrence of A).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8d62753" class="outline-2">
+<h2 id="org8d62753"><span class="section-number-2">5</span> Knowledge &amp; Skills</h2>
+<div class="outline-text-2" id="text-5">
 <ul class="org-ul">
-    <li><a  class="disable" href="MAS/lecture4.html">Forth lecture</a></li>
-    <li><a  class="disable" href="MAS/lecture3.html">Third lecture</a></li>
-    <li><a  class="disable" href="MAS/notes.html">notes</a></li>
+<li>blue words on slides</li>
+<li>compute (conditional) prob. using relative frequency or classical approach.
+<ul class="org-ul">
+<li>addition rule</li>
+<li>multiplication rule</li>
+<li>complement rule</li>
 </ul></li>
-<li>statistical<sub>methods</sub>
+<li>difference between disjoint and independent events.
 <ul class="org-ul">
-<li><a href="statistical_methods/lecture_1/main.html">lecture 1</a></li>
-<li><a href="statistical_methods/lecture_2/main.html">lecture 2</a></li>
-<li><a href="statistical_methods/lecture_3/main.html">lecture 3</a></li>
-<li><a href="statistical_methods/lecture_4/main.html">lecture 4</a></li>
-<li><a href="statistical_methods/lecture_5/main.html">lecture 5</a></li>
-<li><a href="statistical_methods/lecture_6/main.html">lecture 6</a></li>
-<li><a href="statistical_methods/lecture_7/main.html">lecture 7</a></li>
-<li><a href="statistical_methods/lecture_8/main.html">lecture 8</a></li>
-<li><a href="statistical_methods/lecture_9/main.html">lecture 9</a></li>
-<li><a href="statistical_methods/lecture_10/main.html">lecture 10</a></li>
+<li>how to show an event is independent or disjoint.</li>
 </ul></li>
 </ul>
 </div>
+</div>
+</div>
 <div id="postamble" class="status">
+<p class="date">Date: 2020-10-29 Thu 00:00</p>
 <p class="author">Author: Hasan<sub>sh</sub></p>
-<p class="date">Created: 2020-12-11 Fri 16:19</p>
+<p class="date">Created: 2020-12-11 Fri 16:03</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
-<script src="preventDisabled.js"></script>
 </body>
 </html>
+<script type="text/javascript" src="../imageModal.js"></script>

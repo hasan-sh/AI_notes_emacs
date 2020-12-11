@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-12-11 Fri 16:19 -->
+<!-- 2020-12-11 Fri 16:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Home Sitemap for project html-publish-local</title>
+<title>Sixth lecture</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Hasan_sh" />
-<meta name="description" content="home page of all notes"
+<meta name="description" content="Sixth lecture SM: notes and learning skills."
  />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -195,10 +195,12 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link href="disabledStyles.css" rel="stylesheet"/>
-<style>blockquote{border-left: 5px solid #5ecdef; padding-left: 5px;}</style>
-<style>@media screen and (max-width: 768px) { #copyright, #postamble {display: block;width: 100% !important; height: 100px;}}</style>
-<style>#content{padding-bottom:100px;}</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
 
 <script type="text/javascript" src="https://orgmode.org/org-info.js">
 /**
@@ -260,7 +262,7 @@ for the JavaScript code in this tag.
 
 <!--/*--><![CDATA[/*><!--*/
 org_html_manager.set("TOC_DEPTH", "3");
-org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_HOME", "../../index.html");
 org_html_manager.set("LINK_UP", "");
 org_html_manager.set("LOCAL_TOC", "1");
 org_html_manager.set("VIEW_BUTTONS", "0");
@@ -319,36 +321,104 @@ for the JavaScript code in this tag.
 </script>
 </head>
 <body>
-<div id="content">
-<h1 class="title">Home Sitemap for project html-publish-local</h1>
-<ul class="org-ul">
-<li><a href="index.html">Home</a></li>
-<li>MAS
-<ul class="org-ul">
-    <li><a  class="disable" href="MAS/lecture4.html">Forth lecture</a></li>
-    <li><a  class="disable" href="MAS/lecture3.html">Third lecture</a></li>
-    <li><a  class="disable" href="MAS/notes.html">notes</a></li>
-</ul></li>
-<li>statistical<sub>methods</sub>
-<ul class="org-ul">
-<li><a href="statistical_methods/lecture_1/main.html">lecture 1</a></li>
-<li><a href="statistical_methods/lecture_2/main.html">lecture 2</a></li>
-<li><a href="statistical_methods/lecture_3/main.html">lecture 3</a></li>
-<li><a href="statistical_methods/lecture_4/main.html">lecture 4</a></li>
-<li><a href="statistical_methods/lecture_5/main.html">lecture 5</a></li>
-<li><a href="statistical_methods/lecture_6/main.html">lecture 6</a></li>
-<li><a href="statistical_methods/lecture_7/main.html">lecture 7</a></li>
-<li><a href="statistical_methods/lecture_8/main.html">lecture 8</a></li>
-<li><a href="statistical_methods/lecture_9/main.html">lecture 9</a></li>
-<li><a href="statistical_methods/lecture_10/main.html">lecture 10</a></li>
-</ul></li>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="../../index.html"> HOME </a>
+</div><div id="content">
+<h1 class="title">Sixth lecture</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org2a1449b">1. Hypothesis testing</a>
+<ul>
+<li><a href="#orgd7adaae">1.1. Main part</a></li>
+<li><a href="#orge5aa211">1.2. critical region</a></li>
+</ul>
+</li>
 </ul>
 </div>
+</div>
+
+<div id="outline-container-org2a1449b" class="outline-2">
+<h2 id="org2a1449b"><span class="section-number-2">1</span> Hypothesis testing</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgd7adaae" class="outline-3">
+<h3 id="orgd7adaae"><span class="section-number-3">1.1</span> Main part</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+There are two sorts of hypotheses
+</p>
+<ol class="org-ol">
+<li>null hypothesis: we often make a claim here, and try to see if it holds</li>
+<li>alternative hypothesis: we make the alternative claim of the one made in the null hypothesis.
+<ol class="org-ol">
+<li>depending on the claim we choose: 
+<ul class="org-ul">
+<li>population parameter &gt; hypothetical value (left-tailed test)</li>
+<li>population parameter &lt; hypothetical value (right-tailed test)</li>
+<li>population parameter != hypothetical value (two-tailed test)
+<ul class="org-ul">
+<li>if so, we then multiply the test statistic (e.g. z test of the normal distribution) by 2.</li>
+</ul></li>
+</ul></li>
+</ol></li>
+</ol>
+
+
+
+<p>
+We then assume that the null hypothesis is true, and check the probability if it is significant or not. The significance level is denoted by &alpha; (usually 1% or 5%.)
+</p>
+
+<p>
+Thus, the procedure is easy:
+</p>
+<ol class="org-ol">
+<li>identify the population parameter</li>
+<li>formulate the H<sub>0</sub> and H<sub>1</sub> and the significance level.
+<ol class="org-ol">
+<li>the H<sub>0</sub> always has the = sign since this is the hypothetical value for which we are trying to find counter example.</li>
+<li>the H<sub>1</sub>, as said above, depends on the claim made.</li>
+</ol></li>
+<li>collect data</li>
+<li>make the assumption that H<sub>0</sub> is true.</li>
+<li>choose test statistic and specify its distribution under H<sub>0</sub>.</li>
+<li>calculate the test statistic</li>
+<li>find the P-value: prob. that test statistic has more extreme values than the observed value</li>
+<li>based on 7 and &alpha;, make a conclusion regarding H<sub>0</sub>: reject (small P-value) or do not reject (large P-value).</li>
+</ol>
+
+
+<p>
+No golden rules, but the H<sub>0</sub> contains the claim we wish to reject, and the H<sub>1</sub> the one we aim to prove. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge5aa211" class="outline-3">
+<h3 id="orge5aa211"><span class="section-number-3">1.2</span> critical region</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+The critical region denotes to the extreme values of the distribution in order to verify the hypothesis, thus reject or not the H<sub>0</sub>.
+</p>
+
+<p>
+When our test statistic is the z-score (i.e. to convert to normal distribution), we identify the critical region based on the value of &alpha; (i.e. significance level).
+Subsequently, we get the z-score of the hypothetical value based on CLT (i.e. param - p / sqrt(p(1-p)/n)). If the latter (i.e. z-score of the hypothetical value) is less than the first (i.e. z-score of &alpha;), and the test is left-tailed, then H<sub>0</sub> is rejected. Similarly, if the latter is greater and the test is right-tailed, then H<sub>0</sub> is also rejected. Finally, if the test is two-sided, which applies if the latter is less or greater than the z-score of &alpha;.
+</p>
+</div>
+</div>
+</div>
+</div>
 <div id="postamble" class="status">
+<p class="date">Date: 2020-11-19 Thu 00:00</p>
 <p class="author">Author: Hasan<sub>sh</sub></p>
-<p class="date">Created: 2020-12-11 Fri 16:19</p>
+<p class="date">Created: 2020-12-11 Fri 16:03</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
-<script src="preventDisabled.js"></script>
 </body>
 </html>
+<script type="text/javascript" src="../imageModal.js"></script>
