@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-12-11 Fri 16:03 -->
+<!-- 2020-12-14 Mon 10:37 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Fifth lecture</title>
@@ -319,6 +319,28 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="org-div-home-and-up">
@@ -375,7 +397,7 @@ Moreover, the <b>confidence level</b> specify the probability of the confidence 
 </p>
 
 <p>
-The <i>1.96*s<sub>n</sub>/sqrt(n)</i> is called the <b>margin error</b> (abbreviated by E). We can also rewrite the previous formula in case we want to compute (the minimum) sample size <b>n</b> such that the margin of error (i.e. E) is some given value; n = (1.96*s<sub>n</sub>/E)**2.
+The <i>1.96 * s<sub>n</sub></i>\sqrt(n)/ is called the <b>margin error</b> (abbreviated by E). We can also rewrite the previous formula in case we want to compute (the minimum) sample size <b>n</b> such that the margin of error (i.e. E) is some given value; n = (1.96*s<sub>n</sub>/E<sub>max</sub>)**2 (if we have a desired maximum of our margin of error, then we know that we need a sample that is at least equal to the obtained n).
 </p>
 </div>
 </div>
@@ -416,9 +438,8 @@ In contrast, <b>biased estimators:</b>
 <div id="postamble" class="status">
 <p class="date">Date: 2020-11-13 Fri 00:00</p>
 <p class="author">Author: Hasan<sub>sh</sub></p>
-<p class="date">Created: 2020-12-11 Fri 16:03</p>
+<p class="date">Created: 2020-12-14 Mon 10:37</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
-<script type="text/javascript" src="../imageModal.js"></script>
